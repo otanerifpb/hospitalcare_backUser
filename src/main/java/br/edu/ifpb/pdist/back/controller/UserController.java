@@ -31,25 +31,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.CREATED).body(novoUser); 
         }
         return null;
-   }
-
-    // Rota para preencer os dados do formunlário de atualização com dados do banco 
-    // @RequestMapping("/{id}")
-    // public User getUserById(@PathVariable(value = "id") Integer id, ModelAndView mav) {
-    //     Optional<User> opUser = userRepository.findById(id);
-    //     if (opUser.isPresent()) {
-    //         User user = opUser.get();
-    //         return user;
-    //     } 
-    //     return null;
-    // }
-    
-    // Rota para atualizar um Usuário pelo formUpUser
-    // @RequestMapping(value="/update", method = RequestMethod.POST)
-    // public ResponseEntity<User> update(@RequestBody User user, RedirectAttributes redAttrs) {
-    //     User upDateUser = userRepository.save(user);
-    //     return ResponseEntity.status(HttpStatus.OK).body(upDateUser); 
-    // }
+    }
 
     // Rota para atualizar um Usuário pelo formUpUser
     @RequestMapping(value="/logar", method = RequestMethod.POST)
