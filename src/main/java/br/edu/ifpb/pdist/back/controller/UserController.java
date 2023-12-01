@@ -36,10 +36,8 @@ public class UserController {
     // Rota para atualizar um Usuário pelo formUpUser
     @RequestMapping(value="/logar", method = RequestMethod.POST)
     public ResponseEntity<User> login( @RequestParam("param1") String username, @RequestParam("param2") String password, RedirectAttributes redAttrs) {
-      System.err.println("mostra&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"+username+ password);
         Optional<User> usuarioLogado = userRepository.findByUsername(username);
         if (usuarioLogado.isPresent()) {
-             System.err.println("Entrei&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"+username+ password);
             User usu = usuarioLogado.get();
             if(usu.getPassword().equals(password)){
                 return ResponseEntity.status(HttpStatus.OK).body(usu);
