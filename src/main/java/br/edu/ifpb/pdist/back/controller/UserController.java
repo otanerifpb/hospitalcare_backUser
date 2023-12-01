@@ -44,8 +44,7 @@ public class UserController {
             }
             
         } 
-            return null;
-         
+            return null;  
     }
 
     // Rota para deletar um Usuário
