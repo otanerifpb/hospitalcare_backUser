@@ -1,7 +1,7 @@
 package br.edu.ifpb.pdist.back.model;
 
 import java.io.Serializable;
-import java.util.Date;
+//import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -10,10 +10,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.PastOrPresent;
+//import javax.validation.constraints.Past;
+//import javax.validation.constraints.PastOrPresent;
 
-import org.springframework.format.annotation.DateTimeFormat;
+//import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
